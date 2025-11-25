@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RS Automação — Crescimento e Automação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo-center">
+        <img
+          src="/assets/logo-transp.png"
+          alt="RS Automação Digital"
+          class="logo-img"
+        />
+      </div>
+      <div class="nav-inner">
+        <!-- <div class="logo-title">RS AUTOMAÇÃO DIGITAL</div> -->
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#solucao">Solução</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#contato">Fale Conosco</a>
+          <a href="#" id="open-testimonials">Histórias</a>
+        </nav>
+      </div>
+    </header>
+    <section id="home" class="hero relative">
+      <!-- Background Elements -->
+      <div class="bg-elements">
+        <div class="circle bar blue"></div>
+        <div class="circle purple"></div>
+        <div class="gradient"></div>
+      </div>
+
+      <div class="container">
+        <!-- Badge -->
+        <div class="badge" aria-hidden="true">
+          <i data-lucide="zap" class="icon"></i>
+          <span>Transformação Digital Garantida</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="headline">
+          Acelere o
+          <span class="highlight"> Crescimento </span>
+          do Seu Negócio
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="subtitle">
+          Automatização inteligente e captação de leads via WhatsApp, com fluxos
+          que geram
+          <span class="green"> resultados reais e visíveis</span> para sua
+          empresa.
+        </p>
+
+        <!-- Stats -->
+        <div class="stats">
+          <div class="stat">
+            <div class="value green">+347%</div>
+            <div>Crescimento médio nas vendas</div>
+          </div>
+          <div class="stat">
+            <div class="value blue">24h</div>
+            <div>Primeiras melhorias visíveis</div>
+          </div>
+          <div class="stat">
+            <div class="value purple">500+</div>
+            <div>Empresas atendidas</div>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="cta-buttons">
+          <a
+            id="cta"
+            class="btn primary"
+            href="https://wa.me/5532987073537?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20RS%20Automacao%20e%20gostaria%20de%20saber%20como%20automatizar%20atendimento%20e%20captar%20leads%20via%20WhatsApp"
+            data-wa-phone="5532987073537"
+            data-wa-text="Olá, vi o site da RS Automação e gostaria de saber como automatizar atendimento e captar leads via WhatsApp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i data-lucide="phone-call" class="icon"></i>
+            Começar Agora
+            <i data-lucide="arrow-right" class="icon"></i>
+          </a>
+          <button class="btn-histories outline" id="open-testimonials-cta">
+            <i data-lucide="users" class="icon"></i>
+            Ver Histórias de Sucesso
+          </button>
+        </div>
+
+        <!-- Trust
+        <div class="trust">
+          <p>Empresas que confiam em nossos resultados:</p>
+          <div class="logos">
+            <div><h5>Cuidar no Lar</h5></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Modal -->
+    <div id="testimonials-modal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div
+        class="modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button class="modal-close" id="modal-close" aria-label="Fechar">
+          ×
+        </button>
+        <h2 id="modal-title">Histórias de Sucesso</h2>
+        <div class="testimonials">
+          <article class="testimonial">
+            <p class="quote">
+              "Com o agente de WhatsApp nossa fila de leads qualificados dobrou
+              em 30 dias."
+            </p>
+            <p class="who">— Ana, CEO</p>
+          </article>
+          <article class="testimonial">
+            <p class="quote">
+              "A nutrição automática trouxe mais conversões e menos trabalho
+              manual."
+            </p>
+            <p class="who">— João, E-commerce</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- ... Hero Section aqui em cima ... -->
+
+    <!-- NEW: Dor do Cliente -->
+    <section class="pain-section">
+      <div class="container">
+        <h2>Se o seu problema é:</h2>
+        <p class="lead">
+          Muitas empresas perdem leads por demora no atendimento, processos
+          manuais e falta de integração entre canais.
+        </p>
+        <!-- Converted sentence into 3 cards -->
+        <div class="pain-cards">
+          <div class="pain-card">
+            <div class="icon-box accent-a"><i data-lucide="x-circle"></i></div>
+            <h4>Perda de oportunidades</h4>
+            <p>
+              Leads esfriam quando não contactados rapidamente — vendas
+              perdidas.
+            </p>
+          </div>
+
+          <div class="pain-card">
+            <div class="icon-box accent-b"><i data-lucide="frown"></i></div>
+            <h4>Frustração do cliente</h4>
+            <p>
+              Respostas lentas e inconsistentes geram insatisfação e desgaste da
+              marca.
+            </p>
+          </div>
+
+          <div class="pain-card">
+            <div class="icon-box accent-c">
+              <i data-lucide="dollar-sign"></i>
+            </div>
+            <h4>Aumento do custo por aquisição</h4>
+            <p>
+              Processos manuais e baixa conversão elevam o custo para conquistar
+              clientes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: Solução -->
+    <section id="solucao" class="solution-section">
+      <div class="container">
+        <h2>Nós temos a solução!</h2>
+        <p class="lead">
+          Agente de WhatsApp integrado com automação e CRM: captura, qualifica e
+          encaminha leads prontos para venda, reduzindo o tempo de resposta.
+        </p>
+
+        <div class="solution-cards">
+          <div class="solution-card">
+            <div class="icon-box accent-a"><i data-lucide="repeat"></i></div>
+            <h4>Fluxos automáticos</h4>
+            <p>
+              Sequências que acompanham o comportamento do lead e avançam o
+              funil.
+            </p>
+          </div>
+
+          <div class="solution-card">
+            <div class="icon-box accent-b"><i data-lucide="zap"></i></div>
+            <h4>Mensagens rápidas</h4>
+            <p>
+              Respostas instantâneas para manter o interesse e aumentar
+              engajamento.
+            </p>
+          </div>
+
+          <div class="solution-card">
+            <div class="icon-box accent-c">
+              <i data-lucide="user-check"></i>
+            </div>
+            <h4>Transferência para vendedor</h4>
+            <p>
+              Encaminhamento automático do lead qualificado para atendimento
+              humano.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: Benefícios da Automação -->
+    <section class="automation-benefits">
+      <div class="container">
+        <h2>Benefícios da Automação</h2>
+        <div class="benefits-cards">
+          <div class="benefit-card">
+            <div class="icon-box accent-a"><i data-lucide="clock"></i></div>
+            <h4>Acelera o contato inicial</h4>
+            <p>Resposta em segundos para não perder oportunidades.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="icon-box accent-b"><i data-lucide="filter"></i></div>
+            <h4>Melhora a qualificação</h4>
+            <p>Identifica leads com maior probabilidade de compra.</p>
+          </div>
+          <div class="benefit-card">
+            <div class="icon-box accent-c">
+              <i data-lucide="headphones"></i>
+            </div>
+            <h4>Atendimento 24/7</h4>
+            <p>
+              Suporte contínuo com transferência para humano quando necessário.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="services-section">
+      <div class="container">
+        <!-- Badge -->
+        <div class="badge" aria-hidden="true">
+          <i data-lucide="zap" class="icon"></i>
+          <span>Soluções Completas</span>
+        </div>
+
+        <!-- Title -->
+        <h2 class="section-title">
+          Serviços que
+          <span class="highlight">Transformam</span> Negócios
+        </h2>
+
+        <!-- Subtitle -->
+        <p class="section-subtitle">
+          Cada serviço é desenvolvido para gerar resultados mensuráveis e
+          acelerar o crescimento sustentável da sua empresa no ambiente digital.
+        </p>
+
+        <!-- Services Grid -->
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card">
+            <div class="bar blue"></div>
+            <div class="card-header">
+              <div class="icon-box bar blue">
+                <i data-lucide="settings"></i>
+              </div>
+              <div>
+                <h3>Automatização Inteligente</h3>
+                <p>
+                  Fluxos automatizados que convertem leads em clientes 24/7,
+                  incluindo integração com WhatsApp e CRM.
+                </p>
+              </div>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li><span class="dot"></span>CRM Automatizado</li>
+                <li><span class="dot"></span>Agente de WhatsApp integrado</li>
+                <li><span class="dot"></span>Chatbots IA</li>
+                <li><span class="dot"></span>Funis de Conversão</li>
+              </ul>
+              <a class="btn dark wa-link" href="https://wa.me/5532987073537?text=Ol%C3%A1%2C%20quero%20saber%20sobre%20Automatiza%C3%A7%C3%A3o%20Inteligente%20e%20agentes%20integrados%20ao%20WhatsApp" data-wa-phone="5532987073537" data-wa-text="Olá, quero saber sobre Automatização Inteligente e agentes integrados ao WhatsApp" target="_blank" rel="noopener noreferrer" aria-label="Quero o serviço de Automatização Inteligente via WhatsApp">
+                <i data-lucide="trending-up"></i>
+                Saiba mais
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Agente WhatsApp -->
+          <div class="service-card">
+            <div class="bar purple"></div>
+            <div class="card-header">
+              <div class="icon-box bar purple">
+                <i data-lucide="message-circle"></i>
+              </div>
+              <div>
+                <h3>Agente de WhatsApp e Captação</h3>
+                <p>
+                  Agente automatizado que captura e qualifica leads via WhatsApp
+                  (links, QR e integração com site).
+                </p>
+              </div>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li><span class="dot"></span>Captura por link e QR</li>
+                <li><span class="dot"></span>Respostas automáticas e FAQs</li>
+                <li><span class="dot"></span>Integração com CRM</li>
+                <li><span class="dot"></span>Transferência para vendedor</li>
+              </ul>
+              <a class="btn dark wa-link" href="https://wa.me/5532987073537?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20como%20funciona%20o%20Agente%20de%20WhatsApp%20para%20captura%20e%20qualifica%C3%A7%C3%A3o%20de%20leads" data-wa-phone="5532987073537" data-wa-text="Olá, gostaria de saber como funciona o Agente de WhatsApp para captura e qualificação de leads" target="_blank" rel="noopener noreferrer" aria-label="Quero o serviço de Agente de WhatsApp e Captação via WhatsApp">
+                <i data-lucide="message-circle"></i>
+                Saiba mais
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Nutrição de Leads -->
+          <div class="service-card">
+            <div class="bar green"></div>
+            <div class="card-header">
+              <div class="icon-box bar green">
+                <i data-lucide="users"></i>
+              </div>
+              <div>
+                <h3>Nutrição e Qualificação de Leads</h3>
+                <p>
+                  Sequências automáticas por WhatsApp, email e SMS para preparar
+                  leads para a venda.
+                </p>
+              </div>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li><span class="dot"></span>Mensagens programadas</li>
+                <li><span class="dot"></span>Segmentação por comportamento</li>
+                <li><span class="dot"></span>Pontuação de leads</li>
+                <li><span class="dot"></span>Relatórios simples</li>
+              </ul>
+              <a class="btn dark wa-link" href="https://wa.me/5532987073537?text=Olá%2C%20gostaria%20de%20saber%20sobre%20Nutrição%20e%20Qualificação%20de%20Leads%20e%20como%20funcionam%20as%20sequências" data-wa-phone="5532987073537" data-wa-text="Olá, gostaria de saber sobre Nutrição e Qualificação de Leads e como funcionam as sequências" target="_blank" rel="noopener noreferrer" aria-label="Quero o serviço de Nutrição e Qualificação de Leads via WhatsApp">
+                <i data-lucide="users"></i>
+                Saiba mais
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service-card">
+            <div class="bar orange"></div>
+            <div class="card-header">
+              <div class="icon-box bar orange">
+                <i data-lucide="smartphone"></i>
+              </div>
+              <div>
+                <h3>Presença Digital Completa</h3>
+                <p>
+                  Construção e otimização da sua marca no digital para maior
+                  visibilidade e autoridade.
+                </p>
+              </div>
+            </div>
+            <div class="card-content">
+              <ul>
+                <li><span class="dot"></span>Landing Pages</li>
+                <li><span class="dot"></span>SEO Avançado</li>
+                <li><span class="dot"></span>Social Media</li>
+                <li><span class="dot"></span>Branding Digital</li>
+              </ul>
+              <a class="btn dark wa-link" href="https://wa.me/5532987073537?text=Olá%2C%20gostaria%20de%20um%20orçamento%20para%20Presença%20Digital%20Completa%20(landing%2C%20SEO%2C%20social)" data-wa-phone="5532987073537" data-wa-text="Olá, gostaria de um orçamento para Presença Digital Completa (landing, SEO, social)" target="_blank" rel="noopener noreferrer" aria-label="Quero o serviço de Presença Digital Completa via WhatsApp">
+                <i data-lucide="trending-up"></i>
+                Saiba mais
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-box">
+          <h3>Precisa de uma estratégia personalizada?</h3>
+          <p>
+            Combinamos serviços para criar a melhor solução para o seu negócio.
+          </p>
+          <button class="btn-histories light">
+            <i data-lucide="message-square"></i>
+            Conversar com Especialista
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultados" class="benefits">
+      <div class="container">
+        <!-- Cabeçalho -->
+        <div class="benefits-header">
+          <div class="badge tagline">
+            <i data-lucide="zap" class="icon"></i>
+            <span>Resultados Comprovados</span>
+          </div>
+
+          <h2>
+            Por Que Escolher a
+            <span class="highlight">Nossa Agência?</span>
+          </h2>
+
+          <p>
+            Casos reais de empresas que melhoraram vendas e processos com nossas
+            estratégias.
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards">
+          <div class="card">
+            <div class="icon-box accent-a">
+              <i data-lucide="trending-up" class="benefit-icon"></i>
+              <div class="metric">+347%</div>
+            </div>
+            <h3>Mais vendas comprovadas</h3>
+            <p>Aumento médio de 347% nas vendas em até 90 dias.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon-box accent-b">
+              <i data-lucide="clock" class="benefit-icon"></i>
+              <div class="metric">24h</div>
+            </div>
+            <h3>Melhorias rápidas</h3>
+            <p>Primeiras melhorias visíveis em apenas 24 horas.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon-box accent-c">
+              <i data-lucide="users" class="benefit-icon"></i>
+              <div class="metric">+280%</div>
+            </div>
+            <h3>Mais leads relevantes</h3>
+            <p>Aumento médio de 280% na geração de leads qualificados.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon-box accent-a">
+              <i data-lucide="shield" class="benefit-icon"></i>
+              <div class="metric">100%</div>
+            </div>
+            <h3>Transparência</h3>
+            <p>Relatórios claros e acesso total aos dados das campanhas.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon-box accent-b">
+              <i data-lucide="bar-chart-2" class="benefit-icon"></i>
+              <div class="metric">✔✔</div>
+            </div>
+            <h3>Dados em tempo real</h3>
+            <p>Dashboard com métricas fáceis de entender e acompanhar.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon-box accent-c">
+              <i data-lucide="target" class="benefit-icon"></i>
+              <div class="metric">98%</div>
+            </div>
+            <h3>Segmentação precisa</h3>
+            <p>
+              Alvo certo: mostramos sua oferta para quem tem maior chance de
+              comprar.
+            </p>
+          </div>
+        </div>
+
+        <!-- Success Stories -->
+        <div class="success">
+          <div class="success-icon"><i data-lucide="award"></i></div>
+          <h3>Mais de 500 empresas já transformaram seus resultados</h3>
+          <div class="stats">
+            <div class="stat-item">
+              <i data-lucide="users" class="stat-icon"></i>
+              <span class="stat-value">2.3M+</span>
+              <p>Leads Gerados</p>
+            </div>
+            <div class="stat-item">
+              <i data-lucide="dollar-sign" class="stat-icon"></i>
+              <span class="stat-value">R$ 127M</span>
+              <p>Em Vendas Geradas</p>
+            </div>
+            <div class="stat-item">
+              <i data-lucide="thumbs-up" class="stat-icon"></i>
+              <span class="stat-value">98.7%</span>
+              <p>Taxa de Satisfação</p>
+            </div>
+            <div class="stat-item">
+              <i data-lucide="headphones" class="stat-icon"></i>
+              <span class="stat-value">24/7</span>
+              <p>Suporte Especializado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+      <!-- Header -->
+      <div class="text">
+        <div class="badge">
+          <i data-lucide="message-square" class="icon"></i>
+          <span>Fale Conosco</span>
+        </div>
+        <h2 class="title">
+          Pronto para <span class="highlight">Crescer?</span>
+        </h2>
+        <p class="subtitle">
+          Agende uma conversa gratuita com nossos especialistas e descubra como
+          podemos acelerar o crescimento do seu negócio em
+          <strong>30 dias</strong>.
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="form-card">
+          <h3>Fale com um Especialista</h3>
+          <p class="muted">Preencha o formulário e a nossa equipe entrará em contato em até 24h úteis.</p>
+          <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/obrigado.html" class="contact-form">
+            <p style="display:none;">
+              <label>Não preencha: <input name="bot-field" /></label>
+            </p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome Completo *</label>
+                <input type="text" id="nome" name="nome" required />
+              </div>
+
+              <div class="form-group">
+                <label for="telefone">Telefone *</label>
+                <input type="tel" id="telefone" name="telefone" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="servico">Serviço de Interesse</label>
+                <select id="servico" name="servico">
+                  <option value="">Selecione um serviço</option>
+                  <option value="automacao">Automatização</option>
+                  <option value="agente_whatsapp">Agente de WhatsApp</option>
+                  <option value="captacao_leads">Captação de Leads</option>
+                  <option value="nutricao_leads">Nutrição de Leads</option>
+                  <option value="consultoria_digital">Consultoria Digital</option>
+                  <option value="todos_servicos">Todos os Serviços</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="faturamento">Faturamento Mensal</label>
+                <select id="faturamento" name="faturamento">
+                  <option value="">Selecione a faixa</option>
+                  <option value="ate_10k">Até R$ 10k</option>
+                  <option value="10k_50k">R$ 10k - R$ 50k</option>
+                  <option value="50k_100k">R$ 50k - R$ 100k</option>
+                  <option value="100k_plus">Acima de R$ 100k</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+            </div>
+
+            <button type="submit" id="submit-contact" class="btn small primary">
+              Enviar formulário
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  
+        
+
+    <!-- SITE FOOTER: contato, redes sociais e links -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <img src="/assets/logo-transp.png" alt="RS Automação" class="footer-logo" />
+            <div class="footer-slogan">Automação de atendimento e geração de leads via WhatsApp</div>
+          
+          </div>
+
+          <div class="footer-contacts">
+            <div class="contact-row">
+              <i data-lucide="phone-call" class="footer-icon"></i>
+              <div>
+                <div class="muted">WhatsApp / Telefone</div>
+                <a href="https://wa.me/5532988073537" class="footer-link">(32) 98707-3537</a>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <i data-lucide="mail" class="footer-icon"></i>
+              <div>
+                <div class="muted">Email</div>
+                <a href="mailto:rsautomacaodigital@gmail.com" class="footer-link">rsautomacaodigital@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <i data-lucide="map-pin" class="footer-icon"></i>
+              <div>
+                <div class="muted">Local</div>
+                <div class="footer-link">Muriaé, MG — Atendimento Nacional</div>
+              </div>
+            </div>
+            <p class="muted">Automatizamos seu atendimento via WhatsApp para captar e qualificar leads 24/7.</p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-socials">
+            <h4>Redes</h4>
+            <div class="social-list">
+              <a href="#" class="social" aria-label="Instagram" target="_blank">
+                <i data-lucide="instagram"></i>
+              </a>
+              <a href="#" class="social" aria-label="LinkedIn" target="_blank">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="#" class="social" aria-label="Facebook" target="_blank">
+                <i data-lucide="facebook"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Links úteis</h4>
+            <ul>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#solucao">Solução</a></li>
+              <li><a href="#resultados">Resultados</a></li>
+              <li><a href="#contato">Fale Conosco</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="copyright">© <strong>RS Automação</strong> — Todos os direitos reservados</div>
+          <div class="policies">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Ir para o topo">
+      <i data-lucide="chevrons-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

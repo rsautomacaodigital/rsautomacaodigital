@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mensagem Enviada com Sucesso - RS Automação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      :root {
+        --bg-1: #cae7f8;
+        --bg-2: #f5def5;
+        --accent-cyan: #00d4ff;
+        --accent-magenta: #a14bff;
+        --accent-green: #25d366;
+        --white: #ffffff;
+        --dark: #202e2e;
+        --muted: #39495a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+        background: radial-gradient(
+            1200px 600px at 10% 10%,
+            rgba(255, 65, 242, 0.08),
+            transparent
+          ),
+          radial-gradient(
+            800px 400px at 90% 90%,
+            rgba(16, 102, 155, 0.06),
+            transparent
+          ),
+          linear-gradient(180deg, var(--bg-1), var(--bg-2));
+        color: var(--dark);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .success-container {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .success-icon {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 30px;
+        background: linear-gradient(
+          135deg,
+          var(--accent-green),
+          var(--accent-cyan)
+        );
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 20px 60px rgba(37, 211, 102, 0.3);
+        animation: scaleIn 0.5s ease-out 0.2s both;
+      }
+
+      @keyframes scaleIn {
+        from {
+          transform: scale(0);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .success-icon i {
+        width: 60px;
+        height: 60px;
+        color: white;
+        stroke-width: 3;
+      }
+
+      .success-card {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.08),
+          rgba(255, 255, 255, 0.04)
+        );
+        padding: 40px 30px;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(2, 6, 23, 0.3);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 800;
+        margin: 0 0 16px 0;
+        background: linear-gradient(
+          90deg,
+          var(--accent-cyan),
+          var(--accent-magenta)
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .message {
+        font-size: 1.1rem;
+        color: var(--muted);
+        line-height: 1.6;
+        margin: 0 0 30px 0;
+      }
+
+      .info-box {
+        background: rgba(37, 211, 102, 0.08);
+        border: 1px solid rgba(37, 211, 102, 0.2);
+        border-radius: 12px;
+        padding: 20px;
+        margin: 30px 0;
+        text-align: left;
+      }
+
+      .info-box h3 {
+        margin: 0 0 12px 0;
+        font-size: 1rem;
+        color: var(--dark);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .info-box h3 i {
+        width: 20px;
+        height: 20px;
+        color: var(--accent-green);
+      }
+
+      .info-box ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .info-box li {
+        padding: 8px 0;
+        color: var(--muted);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .info-box li i {
+        width: 16px;
+        height: 16px;
+        color: var(--accent-green);
+        flex-shrink: 0;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 24px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .btn-primary {
+        background: linear-gradient(
+          90deg,
+          var(--accent-cyan),
+          var(--accent-magenta)
+        );
+        color: #031026;
+        box-shadow: 0 8px 30px rgba(161, 75, 255, 0.15);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 40px rgba(161, 75, 255, 0.25);
+      }
+
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.06);
+        color: var(--dark);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+      }
+
+      .btn i {
+        width: 20px;
+        height: 20px;
+      }
+
+      .contact-info {
+        margin-top: 40px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .contact-info p {
+        color: var(--muted);
+        font-size: 0.95rem;
+        margin: 8px 0;
+      }
+
+      .whatsapp-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--accent-green);
+        text-decoration: none;
+        font-weight: 700;
+        margin-top: 10px;
+      }
+
+      .whatsapp-link:hover {
+        text-decoration: underline;
+      }
+
+      .whatsapp-link i {
+        width: 20px;
+        height: 20px;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        .success-icon {
+          width: 100px;
+          height: 100px;
+        }
+
+        .success-icon i {
+          width: 50px;
+          height: 50px;
+        }
+
+        .success-card {
+          padding: 30px 20px;
+        }
+
+        .buttons {
+          flex-direction: column;
+        }
+
+        .btn {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="success-container">
+      <div class="success-icon">
+        <i data-lucide="check"></i>
+      </div>
+
+      <div class="success-card">
+        <h1>Mensagem Enviada com Sucesso!</h1>
+
+        <p class="message">
+          Obrigado por entrar em contato com a <strong>RS Automação</strong>.
+          Recebemos sua mensagem e nossa equipe retornará em breve.
+        </p>
+
+        <div class="info-box">
+          <h3>
+            <i data-lucide="clock"></i>
+            O que acontece agora?
+          </h3>
+          <ul>
+            <li>
+              <i data-lucide="mail"></i>
+              Você receberá um email de confirmação
+            </li>
+            <li>
+              <i data-lucide="user-check"></i>
+              Nossa equipe analisará sua solicitação
+            </li>
+            <li>
+              <i data-lucide="phone-call"></i>
+              Entraremos em contato em até 24h úteis
+            </li>
+            <li>
+              <i data-lucide="calendar"></i>
+              Agendaremos uma reunião se necessário
+            </li>
+          </ul>
+        </div>
+
+        <div class="buttons">
+          <a href="/" class="btn btn-primary">
+            <i data-lucide="home"></i>
+            Voltar para o Site
+          </a>
+          <a
+            href="https://wa.me/5532987073537?text=Ol%C3%A1%2C%20acabei%20de%20enviar%20o%20formul%C3%A1rio%20e%20gostaria%20de%20falar%20agora"
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i data-lucide="message-circle"></i>
+            Falar Agora no WhatsApp
+          </a>
+        </div>
+
+        <div class="contact-info">
+          <p><strong>Precisa de ajuda urgente?</strong></p>
+          <a
+            href="https://wa.me/5532987073537"
+            class="whatsapp-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i data-lucide="phone"></i>
+            (32) 98707-3537
+          </a>
+          <p style="margin-top: 16px; font-size: 0.9rem">
+            Email: rsautomacaodigital@gmail.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      lucide.createIcons();
+
+      // Adiciona animação de confete (opcional)
+      function createConfetti() {
+        const colors = ["#00d4ff", "#a14bff", "#25d366"];
+        const confettiCount = 50;
+
+        for (let i = 0; i < confettiCount; i++) {
+          setTimeout(() => {
+            const confetti = document.createElement("div");
+            confetti.style.cssText = `
+              position: fixed;
+              width: 10px;
+              height: 10px;
+              background: ${colors[Math.floor(Math.random() * colors.length)]};
+              left: ${Math.random() * 100}%;
+              top: -10px;
+              border-radius: 50%;
+              pointer-events: none;
+              z-index: 9999;
+              animation: fall ${2 + Math.random() * 2}s linear forwards;
+            `;
+            document.body.appendChild(confetti);
+
+            setTimeout(() => confetti.remove(), 4000);
+          }, i * 30);
+        }
+      }
+
+      // Adiciona o CSS da animação
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes fall {
+          to {
+            transform: translateY(100vh) rotate(360deg);
+            opacity: 0;
+          }
+        }
+      `;
+      document.head.appendChild(style);
+
+      // Executa o confete ao carregar a página
+      window.addEventListener("load", () => {
+        setTimeout(createConfetti, 300);
+      });
+    </script>
+  </body>
+</html>

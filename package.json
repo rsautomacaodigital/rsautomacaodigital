@@ -1,0 +1,26 @@
+{
+  "name": "rs-automacao-digital",
+  "version": "1.0.0",
+  "description": "Site RS Automação Digital - Automação e captação de leads via WhatsApp",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 8080",
+    "build": "echo 'No build needed for static site'"
+  },
+  "keywords": [
+    "automacao",
+    "whatsapp",
+    "leads",
+    "crm",
+    "digital"
+  ],
+  "author": "RS Automação Digital",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "nodemailer": "^7.0.10",
+    "resend": "^6.5.2"
+  }
+}
